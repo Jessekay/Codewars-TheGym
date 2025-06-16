@@ -1,6 +1,3 @@
-function isVow(a) {
-    return a.map(num => {
-        const char = String.fromCharCode(num);
-        return 'aeiuo'.includes(char) ? char : num;
-    });
+function isVow(a){
+  return a.map(x => 'aeiou'.includes(String.fromCharCode(x)) ? String.fromCharCode(x) : x);
 }
